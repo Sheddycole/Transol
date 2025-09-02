@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Stops - Transol Transportation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/promotions.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader">
+            <div class="loader-logo">
+                <i class="fas fa-bus"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Transition Element -->
+    <div class="page-transition"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <i class="fas fa-bus"></i>
+                </div>
+                <h1>Transol</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="routes.html">Routes & Schedules</a></li>
+                    <li><a href="cards.html">Transport Cards</a></li>
+                    <li><a href="stops.html" class="active">Bus Stops</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Bus Stops</h1>
+            <p>Find all registered bus stops and your nearest pick-up points</p>
+        </div>
+    </section>
+
+    <!-- Stops Section -->
+    <section class="stops-page">
+        <div class="container">
+            <div class="stops-search-container">
+                <h2>Find Nearby Stops</h2>
+                <div class="search-form">
+                    <div class="form-group">
+                        <label for="location">Your Location</label>
+                        <input type="text" id="location" placeholder="Enter your address or use current location">
+                    </div>
+                    <div class="form-group">
+                        <label for="radius">Search Radius</label>
+                        <select id="radius">
+                            <option value="0.5">0.5 miles</option>
+                            <option value="1" selected>1 mile</option>
+                            <option value="2">2 miles</option>
+                            <option value="5">5 miles</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="route-filter">Filter by Route</label>
+                        <select id="route-filter">
+                            <option value="">All Routes</option>
+                            <option value="1">Route 1: Downtown - Airport Express</option>
+                            <option value="2">Route 2: Central Station - Shopping Mall</option>
+                            <option value="3">Route 3: University - Business District</option>
+                            <option value="4">Route 4: Suburban Express</option>
+                            <option value="5">Route 5: Beach Line</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </div>
+
+            <div class="stops-map-container">
+                <h2>Interactive Stop Map</h2>
+                <div class="stops-map">
+                    <div id="stops-map-placeholder">
+                        <p>Bus stops map loading...</p>
+                        <div class="map-loading"></div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Popular Bus Stops</h2>
+            <div class="stops-grid">
+                <div class="stop-card">
+                    <div class="stop-header">
+                        <div class="stop-icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3 class="stop-name">Central Station</h3>
+                    </div>
+                    <div class="stop-content">
+                        <div class="stop-routes">
+                            <h4>Routes</h4>
+                            <div class="route-tags">
+                                <span class="route-tag">1</span>
+                                <span class="route-tag">2</span>
+                                <span class="route-tag">4</span>
+                                <span class="route-tag">5</span>
+                            </div>
+                        </div>
+                        <div class="stop-amenities">
+                            <h4>Amenities</h4>
+                            <div class="amenities-list">
+                                <span class="amenity-tag"><i class="fas fa-umbrella"></i> Shelter</span>
+                                <span class="amenity-tag"><i class="fas fa-chair"></i> Seating</span>
+                                <span class="amenity-tag"><i class="fas fa-tv"></i> Real-time Display</span>
+                                <span class="amenity-tag"><i class="fas fa-ticket-alt"></i> Ticket Machine</span>
+                                <span class="amenity-tag"><i class="fas fa-wheelchair"></i> Accessibility</span>
+                            </div>
+                        </div>
+                        <div class="stop-actions">
+                            <a href="#" class="btn btn-small btn-primary">View Schedule</a>
+                            <a href="#" class="btn btn-small btn-outline">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stop-card">
+                    <div class="stop-header">
+                        <div class="stop-icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3 class="stop-name">City Hall</h3>
+                    </div>
+                    <div class="stop-content">
+                        <div class="stop-routes">
+                            <h4>Routes</h4>
+                            <div class="route-tags">
+                                <span class="route-tag">1</span>
+                                <span class="route-tag">4</span>
+                            </div>
+                        </div>
+                        <div class="stop-amenities">
+                            <h4>Amenities</h4>
+                            <div class="amenities-list">
+                                <span class="amenity-tag"><i class="fas fa-umbrella"></i> Shelter</span>
+                                <span class="amenity-tag"><i class="fas fa-chair"></i> Seating</span>
+                                <span class="amenity-tag"><i class="fas fa-tv"></i> Real-time Display</span>
+                            </div>
+                        </div>
+                        <div class="stop-actions">
+                            <a href="#" class="btn btn-small btn-primary">View Schedule</a>
+                            <a href="#" class="btn btn-small btn-outline">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stop-card">
+                    <div class="stop-header">
+                        <div class="stop-icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3 class="stop-name">Business District</h3>
+                    </div>
+                    <div class="stop-content">
+                        <div class="stop-routes">
+                            <h4>Routes</h4>
+                            <div class="route-tags">
+                                <span class="route-tag">1</span>
+                                <span class="route-tag">3</span>
+                                <span class="route-tag">4</span>
+                            </div>
+                        </div>
+                        <div class="stop-amenities">
+                            <h4>Amenities</h4>
+                            <div class="amenities-list">
+                                <span class="amenity-tag"><i class="fas fa-umbrella"></i> Shelter</span>
+                                <span class="amenity-tag"><i class="fas fa-chair"></i> Seating</span>
+                                <span class="amenity-tag"><i class="fas fa-tv"></i> Real-time Display</span>
+                                <span class="amenity-tag"><i class="fas fa-ticket-alt"></i> Ticket Machine</span>
+                            </div>
+                        </div>
+                        <div class="stop-actions">
+                            <a href="#" class="btn btn-small btn-primary">View Schedule</a>
+                            <a href="#" class="btn btn-small btn-outline">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stop-card">
+                    <div class="stop-header">
+                        <div class="stop-icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3 class="stop-name">University Campus</h3>
+                    </div>
+                    <div class="stop-content">
+                        <div class="stop-routes">
+                            <h4>Routes</h4>
+                            <div class="route-tags">
+                                <span class="route-tag">2</span>
+                                <span class="route-tag">3</span>
+                            </div>
+                        </div>
+                        <div class="stop-amenities">
+                            <h4>Amenities</h4>
+                            <div class="amenities-list">
+                                <span class="amenity-tag"><i class="fas fa-umbrella"></i> Shelter</span>
+                                <span class="amenity-tag"><i class="fas fa-chair"></i> Seating</span>
+                                <span class="amenity-tag"><i class="fas fa-tv"></i> Real-time Display</span>
+                                <span class="amenity-tag"><i class="fas fa-ticket-alt"></i> Ticket Machine</span>
+                            </div>
+                        </div>
+                        <div class="stop-actions">
+                            <a href="#" class="btn btn-small btn-primary">View Schedule</a>
+                            <a href="#" class="btn btn-small btn-outline">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stop-card">
+                    <div class="stop-header">
+                        <div class="stop-icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3 class="stop-name">Shopping Mall</h3>
+                    </div>
+                    <div class="stop-content">
+                        <div class="stop-routes">
+                            <h4>Routes</h4>
+                            <div class="route-tags">
+                                <span class="route-tag">2</span>
+                            </div>
+                        </div>
+                        <div class="stop-amenities">
+                            <h4>Amenities</h4>
+                            <div class="amenities-list">
+                                <span class="amenity-tag"><i class="fas fa-umbrella"></i> Shelter</span>
+                                <span class="amenity-tag"><i class="fas fa-chair"></i> Seating</span>
+                                <span class="amenity-tag"><i class="fas fa-tv"></i> Real-time Display</span>
+                                <span class="amenity-tag"><i class="fas fa-ticket-alt"></i> Ticket Machine</span>
+                                <span class="amenity-tag"><i class="fas fa-wheelchair"></i> Accessibility</span>
+                            </div>
+                        </div>
+                        <div class="stop-actions">
+                            <a href="#" class="btn btn-small btn-primary">View Schedule</a>
+                            <a href="#" class="btn btn-small btn-outline">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stop-card">
+                    <div class="stop-header">
+                        <div class="stop-icon">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                        <h3 class="stop-name">Airport Terminal 1</h3>
+                    </div>
+                    <div class="stop-content">
+                        <div class="stop-routes">
+                            <h4>Routes</h4>
+                            <div class="route-tags">
+                                <span class="route-tag">1</span>
+                            </div>
+                        </div>
+                        <div class="stop-amenities">
+                            <h4>Amenities</h4>
+                            <div class="amenities-list">
+                                <span class="amenity-tag"><i class="fas fa-umbrella"></i> Shelter</span>
+                                <span class="amenity-tag"><i class="fas fa-chair"></i> Seating</span>
+                                <span class="amenity-tag"><i class="fas fa-tv"></i> Real-time Display</span>
+                                <span class="amenity-tag"><i class="fas fa-ticket-alt"></i> Ticket Machine</span>
+                                <span class="amenity-tag"><i class="fas fa-wheelchair"></i> Accessibility</span>
+                            </div>
+                        </div>
+                        <div class="stop-actions">
+                            <a href="#" class="btn btn-small btn-primary">View Schedule</a>
+                            <a href="#" class="btn btn-small btn-outline">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Always Know When Your Bus Arrives</h2>
+                <p>Download our mobile app to get real-time updates and notifications about your favorite routes and stops.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-white">Download App</a>
+                    <a href="routes.html" class="btn btn-outline-white">View Routes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Transol</h3>
+                    <p>Smart mobility solutions for modern cities and communities.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="routes.html">Routes & Schedules</a></li>
+                        <li><a href="cards.html">Transport Cards</a></li>
+                        <li><a href="stops.html">Bus Stops</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="routes.html">Route Planning</a></li>
+                        <li><a href="cards.html">Card Management</a></li>
+                        <li><a href="stops.html">Bus Stop Locator</a></li>
+                        <li><a href="#">Schedule Updates</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates and promotions.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Transol Transportation. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/promotions.js"></script>
+</body>
+</html>

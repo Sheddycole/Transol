@@ -1,0 +1,160 @@
+{
+  "cards": [
+    {
+      "id": "standard",
+      "name": "Standard Card",
+      "description": "Perfect for regular commuters with unlimited rides within the city.",
+      "price": 50.00,
+      "period": "month",
+      "benefits": [
+        "Unlimited rides on all city routes",
+        "Valid for 30 days from activation",
+        "Transferable between bus and metro lines",
+        "10% discount on weekend travel"
+      ],
+      "restrictions": [
+        "Not valid for express routes",
+        "No airport service included"
+      ],
+      "image": "standard-card.png"
+    },
+    {
+      "id": "premium",
+      "name": "Premium Card",
+      "description": "Includes express routes, priority boarding, and regional travel.",
+      "price": 75.00,
+      "period": "month",
+      "benefits": [
+        "Unlimited rides on all routes including express",
+        "Airport service included",
+        "Priority boarding",
+        "Valid for 30 days from activation",
+        "Transferable between all transport modes",
+        "20% discount on weekend travel",
+        "Free bicycle rental (up to 2 hours daily)"
+      ],
+      "restrictions": [
+        "ID required for use",
+        "Non-transferable to other users"
+      ],
+      "featured": true,
+      "image": "premium-card.png"
+    },
+    {
+      "id": "student",
+      "name": "Student Card",
+      "description": "Discounted rates for students with valid ID. Includes all city routes.",
+      "price": 30.00,
+      "period": "month",
+      "benefits": [
+        "Unlimited rides on all city routes",
+        "Valid for 30 days from activation",
+        "Transferable between bus and metro lines",
+        "15% discount on weekend travel",
+        "Special discounts at partner stores and restaurants"
+      ],
+      "restrictions": [
+        "Valid student ID required",
+        "Not valid for express routes",
+        "No airport service included"
+      ],
+      "image": "student-card.png"
+    },
+    {
+      "id": "senior",
+      "name": "Senior Card",
+      "description": "Special rates for seniors aged 65 and above.",
+      "price": 25.00,
+      "period": "month",
+      "benefits": [
+        "Unlimited rides on all city routes",
+        "Valid for 30 days from activation",
+        "Transferable between bus and metro lines",
+        "Priority seating",
+        "Assistance service available"
+      ],
+      "restrictions": [
+        "Age verification required",
+        "Not valid for express routes",
+        "Limited hours during peak times"
+      ],
+      "image": "senior-card.png"
+    },
+    {
+      "id": "family",
+      "name": "Family Card",
+      "description": "Economical option for families traveling together.",
+      "price": 100.00,
+      "period": "month",
+      "benefits": [
+        "Valid for up to 5 family members",
+        "Unlimited rides on all city routes",
+        "Valid for 30 days from activation",
+        "Transferable between bus and metro lines",
+        "25% discount on weekend travel",
+        "Free for children under 5"
+      ],
+      "restrictions": [
+        "Family verification required",
+        "All members must travel together",
+        "Not valid for express routes"
+      ],
+      "image": "family-card.png"
+    },
+    {
+      "id": "tourist",
+      "name": "Tourist Pass",
+      "description": "Perfect for visitors exploring the city.",
+      "price": 20.00,
+      "period": "3 days",
+      "benefits": [
+        "Unlimited rides on all city routes",
+        "Airport service included",
+        "Valid for 72 hours from activation",
+        "Includes city attractions discount pass",
+        "Free city map and guide"
+      ],
+      "restrictions": [
+        "Non-renewable",
+        "No refunds for unused time"
+      ],
+      "image": "tourist-card.png"
+    },
+    {
+      "id": "weekend",
+      "name": "Weekend Pass",
+      "description": "Unlimited travel during weekends.",
+      "price": 15.00,
+      "period": "weekend",
+      "benefits": [
+        "Unlimited rides on all routes including express",
+        "Valid from Friday 6pm to Sunday midnight",
+        "Airport service included",
+        "Discounts at partner entertainment venues"
+      ],
+      "restrictions": [
+        "Valid only during specified weekend hours",
+        "No weekday travel"
+      ],
+      "image": "weekend-card.png"
+    }
+  ],
+  "recharge_options": [
+    {
+      "amount": 10.00,
+      "bonus": 0.00
+    },
+    {
+      "amount": 20.00,
+      "bonus": 1.00
+    },
+    {
+      "amount": 50.00,
+      "bonus": 3.50
+    },
+    {
+      "amount": 100.00,
+      "bonus": 10.00
+    }
+  ]
+}

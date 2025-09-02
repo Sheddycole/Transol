@@ -1,0 +1,132 @@
+/* Modal Styles for Transol Transportation Website */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: var(--border-radius);
+    max-width: 800px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--gray-color);
+    transition: var(--transition);
+}
+
+.close-modal:hover {
+    color: var(--dark-color);
+}
+
+.route-info, .stop-info, .card-info {
+    margin-top: 20px;
+}
+
+.schedule-grid, .stop-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.route-stops-list, .amenities-list, .nearby-list, .benefits-list, .restrictions-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.route-stops-list li, .amenities-list li, .nearby-list li {
+    margin-bottom: 5px;
+}
+
+.stop-actions, .card-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.card-image-large {
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-description {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.card-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.benefits-list li, .restrictions-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.benefits-list i {
+    color: var(--success-color);
+    margin-right: 10px;
+}
+
+.restrictions-list i {
+    color: var(--danger-color);
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .schedule-grid, .stop-details-grid, .card-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .stop-actions, .card-actions {
+        flex-direction: column;
+    }
+}

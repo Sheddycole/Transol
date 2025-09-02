@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Routes & Schedules - Transol Transportation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/promotions.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="loader">
+            <div class="loader-logo">
+                <i class="fas fa-bus"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Page Transition Element -->
+    <div class="page-transition"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <i class="fas fa-bus"></i>
+                </div>
+                <h1>Transol</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="routes.html" class="active">Routes & Schedules</a></li>
+                    <li><a href="cards.html">Transport Cards</a></li>
+                    <li><a href="stops.html">Bus Stops</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Routes & Schedules</h1>
+            <p>Find the perfect route for your journey with our comprehensive schedule information</p>
+        </div>
+    </section>
+
+    <!-- Routes Section -->
+    <section class="routes-page">
+        <div class="container">
+            <div class="routes-search-container">
+                <h2>Find Your Route</h2>
+                <div class="routes-search">
+                    <div class="search-form">
+                        <div class="form-group">
+                            <label for="origin">Origin</label>
+                            <input type="text" id="origin" placeholder="Enter starting point">
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" placeholder="Enter destination">
+                        </div>
+                        <div class="form-group">
+                            <label for="travel-date">Date</label>
+                            <input type="date" id="travel-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="travel-time">Time</label>
+                            <input type="time" id="travel-time">
+                        </div>
+                        <button class="btn btn-primary">Search Routes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="routes-list-container">
+                <h2>Popular Routes</h2>
+                <div class="routes-list">
+                    <div class="route-item">
+                        <div class="route-number">1</div>
+                        <div class="route-details">
+                            <h3>Downtown - Airport Express</h3>
+                            <p class="route-description">Fast connection between the city center and both airport terminals.</p>
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> Every 15 minutes</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 6 stops</span>
+                                <span><i class="fas fa-road"></i> 12.5 miles</span>
+                            </div>
+                        </div>
+                        <div class="route-actions">
+                            <a href="#" class="btn btn-secondary route-details-btn" data-route-id="1">View Schedule</a>
+                            <a href="#" class="btn btn-outline">View Map</a>
+                        </div>
+                    </div>
+
+                    <div class="route-item">
+                        <div class="route-number">2</div>
+                        <div class="route-details">
+                            <h3>Central Station - Shopping Mall</h3>
+                            <p class="route-description">Convenient route connecting the main station to the city's largest shopping center.</p>
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> Every 20 minutes</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 5 stops</span>
+                                <span><i class="fas fa-road"></i> 8.3 miles</span>
+                            </div>
+                        </div>
+                        <div class="route-actions">
+                            <a href="#" class="btn btn-secondary route-details-btn" data-route-id="2">View Schedule</a>
+                            <a href="#" class="btn btn-outline">View Map</a>
+                        </div>
+                    </div>
+
+                    <div class="route-item">
+                        <div class="route-number">3</div>
+                        <div class="route-details">
+                            <h3>University - Business District</h3>
+                            <p class="route-description">Direct connection between the university campus and the business district.</p>
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> Every 10 minutes</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 5 stops</span>
+                                <span><i class="fas fa-road"></i> 6.7 miles</span>
+                            </div>
+                        </div>
+                        <div class="route-actions">
+                            <a href="#" class="btn btn-secondary route-details-btn" data-route-id="3">View Schedule</a>
+                            <a href="#" class="btn btn-outline">View Map</a>
+                        </div>
+                    </div>
+
+                    <div class="route-item">
+                        <div class="route-number">4</div>
+                        <div class="route-details">
+                            <h3>Suburban Express</h3>
+                            <p class="route-description">Connecting the city center with suburban residential areas.</p>
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> Every 30 minutes</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 6 stops</span>
+                                <span><i class="fas fa-road"></i> 15.2 miles</span>
+                            </div>
+                        </div>
+                        <div class="route-actions">
+                            <a href="#" class="btn btn-secondary route-details-btn" data-route-id="4">View Schedule</a>
+                            <a href="#" class="btn btn-outline">View Map</a>
+                        </div>
+                    </div>
+
+                    <div class="route-item">
+                        <div class="route-number">5</div>
+                        <div class="route-details">
+                            <h3>Beach Line</h3>
+                            <p class="route-description">Scenic route connecting downtown to beach areas and coastal villages.</p>
+                            <div class="route-info">
+                                <span><i class="fas fa-clock"></i> Every 25 minutes</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 5 stops</span>
+                                <span><i class="fas fa-road"></i> 10.8 miles</span>
+                            </div>
+                        </div>
+                        <div class="route-actions">
+                            <a href="#" class="btn btn-secondary route-details-btn" data-route-id="5">View Schedule</a>
+                            <a href="#" class="btn btn-outline">View Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="routes-map-container">
+                <h2>Interactive Route Map</h2>
+                <div class="routes-map">
+                    <div id="routes-map-placeholder">
+                        <p>Interactive route map loading...</p>
+                        <div class="map-loading"></div>
+                    </div>
+                </div>
+                <div class="map-legend">
+                    <h3>Map Legend</h3>
+                    <ul>
+                        <li><span class="legend-color" style="background-color: #0056b3;"></span> Route 1: Downtown - Airport Express</li>
+                        <li><span class="legend-color" style="background-color: #00a8e8;"></span> Route 2: Central Station - Shopping Mall</li>
+                        <li><span class="legend-color" style="background-color: #ff9500;"></span> Route 3: University - Business District</li>
+                        <li><span class="legend-color" style="background-color: #28a745;"></span> Route 4: Suburban Express</li>
+                        <li><span class="legend-color" style="background-color: #dc3545;"></span> Route 5: Beach Line</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Travel Smarter with Transol</h2>
+                <p>Get your transport card today and enjoy seamless travel across all our routes.</p>
+                <div class="cta-buttons">
+                    <a href="cards.html" class="btn btn-white">Get Your Card</a>
+                    <a href="stops.html" class="btn btn-outline-white">Find Nearby Stops</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Transol</h3>
+                    <p>Smart mobility solutions for modern cities and communities.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="routes.html">Routes & Schedules</a></li>
+                        <li><a href="cards.html">Transport Cards</a></li>
+                        <li><a href="stops.html">Bus Stops</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="routes.html">Route Planning</a></li>
+                        <li><a href="cards.html">Card Management</a></li>
+                        <li><a href="stops.html">Bus Stop Locator</a></li>
+                        <li><a href="#">Schedule Updates</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates and promotions.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Transol Transportation. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/data-loader.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/promotions.js"></script>
+</body>
+</html>

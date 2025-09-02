@@ -1,0 +1,116 @@
+{
+  "routes": [
+    {
+      "id": 1,
+      "name": "Downtown - Airport Express",
+      "frequency": "Every 15 minutes",
+      "stops": [
+        "Central Station",
+        "City Hall",
+        "Business District",
+        "Convention Center",
+        "Airport Terminal 1",
+        "Airport Terminal 2"
+      ],
+      "schedule": {
+        "weekdays": {
+          "first_departure": "05:00",
+          "last_departure": "23:00"
+        },
+        "weekends": {
+          "first_departure": "06:00",
+          "last_departure": "22:00"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Central Station - Shopping Mall",
+      "frequency": "Every 20 minutes",
+      "stops": [
+        "Central Station",
+        "Downtown Plaza",
+        "University Campus",
+        "Riverside Park",
+        "Shopping Mall"
+      ],
+      "schedule": {
+        "weekdays": {
+          "first_departure": "06:00",
+          "last_departure": "22:00"
+        },
+        "weekends": {
+          "first_departure": "07:00",
+          "last_departure": "23:00"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "University - Business District",
+      "frequency": "Every 10 minutes",
+      "stops": [
+        "University Campus",
+        "Student Housing",
+        "Public Library",
+        "City Park",
+        "Business District"
+      ],
+      "schedule": {
+        "weekdays": {
+          "first_departure": "05:30",
+          "last_departure": "23:30"
+        },
+        "weekends": {
+          "first_departure": "07:30",
+          "last_departure": "22:30"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "Suburban Express",
+      "frequency": "Every 30 minutes",
+      "stops": [
+        "Central Station",
+        "Downtown",
+        "Hospital",
+        "North Suburb",
+        "East Suburb",
+        "South Suburb"
+      ],
+      "schedule": {
+        "weekdays": {
+          "first_departure": "05:15",
+          "last_departure": "22:15"
+        },
+        "weekends": {
+          "first_departure": "06:15",
+          "last_departure": "21:15"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Beach Line",
+      "frequency": "Every 25 minutes",
+      "stops": [
+        "Central Station",
+        "Downtown",
+        "Marina",
+        "Beach Resort",
+        "Coastal Village"
+      ],
+      "schedule": {
+        "weekdays": {
+          "first_departure": "06:30",
+          "last_departure": "21:30"
+        },
+        "weekends": {
+          "first_departure": "07:00",
+          "last_departure": "22:30"
+        }
+      }
+    }
+  ]
+}

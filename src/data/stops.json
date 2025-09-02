@@ -1,0 +1,224 @@
+{
+  "stops": [
+    {
+      "id": 1,
+      "name": "Central Station",
+      "location": {
+        "lat": 40.7128,
+        "lng": -74.0060
+      },
+      "routes": [1, 2, 4, 5],
+      "amenities": ["Shelter", "Seating", "Real-time Display", "Ticket Machine", "Accessibility Features"],
+      "nearby": ["Train Station", "Tourist Information", "Coffee Shop"]
+    },
+    {
+      "id": 2,
+      "name": "City Hall",
+      "location": {
+        "lat": 40.7135,
+        "lng": -74.0080
+      },
+      "routes": [1, 4],
+      "amenities": ["Shelter", "Seating", "Real-time Display"],
+      "nearby": ["Government Offices", "Public Park", "Restaurants"]
+    },
+    {
+      "id": 3,
+      "name": "Business District",
+      "location": {
+        "lat": 40.7145,
+        "lng": -74.0090
+      },
+      "routes": [1, 3, 4],
+      "amenities": ["Shelter", "Seating", "Real-time Display", "Ticket Machine"],
+      "nearby": ["Office Buildings", "Banks", "Cafes"]
+    },
+    {
+      "id": 4,
+      "name": "Convention Center",
+      "location": {
+        "lat": 40.7155,
+        "lng": -74.0070
+      },
+      "routes": [1],
+      "amenities": ["Shelter", "Seating", "Real-time Display", "Ticket Machine", "Accessibility Features"],
+      "nearby": ["Hotels", "Restaurants", "Exhibition Halls"]
+    },
+    {
+      "id": 5,
+      "name": "Airport Terminal 1",
+      "location": {
+        "lat": 40.6413,
+        "lng": -73.7781
+      },
+      "routes": [1],
+      "amenities": ["Shelter", "Seating", "Real-time Display", "Ticket Machine", "Accessibility Features"],
+      "nearby": ["Airport Services", "Car Rental", "Hotels"]
+    },
+    {
+      "id": 6,
+      "name": "Airport Terminal 2",
+      "location": {
+        "lat": 40.6423,
+        "lng": -73.7791
+      },
+      "routes": [1],
+      "amenities": ["Shelter", "Seating", "Real-time Display", "Ticket Machine", "Accessibility Features"],
+      "nearby": ["Airport Services", "Duty-Free Shops", "Restaurants"]
+    },
+    {
+      "id": 7,
+      "name": "Downtown Plaza",
+      "location": {
+        "lat": 40.7138,
+        "lng": -74.0070
+      },
+      "routes": [2, 4, 5],
+      "amenities": ["Shelter", "Seating", "Real-time Display"],
+      "nearby": ["Shopping Center", "Restaurants", "Movie Theater"]
+    },
+    {
+      "id": 8,
+      "name": "University Campus",
+      "location": {
+        "lat": 40.7300,
+        "lng": -73.9950
+      },
+      "routes": [2, 3],
+      "amenities": ["Shelter", "Seating", "Real-time Display", "Ticket Machine"],
+      "nearby": ["University Buildings", "Student Center", "Library"]
+    },
+    {
+      "id": 9,
+      "name": "Riverside Park",
+      "location": {
+        "lat": 40.7310,
+        "lng": -73.9970
+      },
+      "routes": [2],
+      "amenities": ["Seating", "Real-time Display"],
+      "nearby": ["Park", "Jogging Trail", "Cafes"]
+    },
+    {
+      "id": 10,
+      "name": "Shopping Mall",
+      "location": {
+        "lat": 40.7320,
+        "lng": -73.9980
+      },
+      "routes": [2],
+      "amenities": ["Shelter", "Seating", "Real-time Display", "Ticket Machine", "Accessibility Features"],
+      "nearby": ["Retail Stores", "Food Court", "Cinema"]
+    },
+    {
+      "id": 11,
+      "name": "Student Housing",
+      "location": {
+        "lat": 40.7310,
+        "lng": -73.9940
+      },
+      "routes": [3],
+      "amenities": ["Shelter", "Seating"],
+      "nearby": ["Dormitories", "Convenience Store", "Laundromat"]
+    },
+    {
+      "id": 12,
+      "name": "Public Library",
+      "location": {
+        "lat": 40.7320,
+        "lng": -73.9930
+      },
+      "routes": [3],
+      "amenities": ["Shelter", "Seating", "Real-time Display"],
+      "nearby": ["Library", "Community Center", "Cafe"]
+    },
+    {
+      "id": 13,
+      "name": "City Park",
+      "location": {
+        "lat": 40.7330,
+        "lng": -73.9920
+      },
+      "routes": [3],
+      "amenities": ["Seating"],
+      "nearby": ["Park", "Playground", "Ice Cream Shop"]
+    },
+    {
+      "id": 14,
+      "name": "Hospital",
+      "location": {
+        "lat": 40.7140,
+        "lng": -74.0100
+      },
+      "routes": [4],
+      "amenities": ["Shelter", "Seating", "Real-time Display", "Accessibility Features"],
+      "nearby": ["Medical Center", "Pharmacy", "Cafe"]
+    },
+    {
+      "id": 15,
+      "name": "North Suburb",
+      "location": {
+        "lat": 40.7500,
+        "lng": -74.0000
+      },
+      "routes": [4],
+      "amenities": ["Shelter", "Seating"],
+      "nearby": ["Residential Area", "Local Shops", "Community Center"]
+    },
+    {
+      "id": 16,
+      "name": "East Suburb",
+      "location": {
+        "lat": 40.7200,
+        "lng": -73.9800
+      },
+      "routes": [4],
+      "amenities": ["Shelter", "Seating", "Real-time Display"],
+      "nearby": ["Residential Area", "School", "Park"]
+    },
+    {
+      "id": 17,
+      "name": "South Suburb",
+      "location": {
+        "lat": 40.6900,
+        "lng": -74.0000
+      },
+      "routes": [4],
+      "amenities": ["Shelter", "Seating"],
+      "nearby": ["Residential Area", "Shopping Center", "Sports Complex"]
+    },
+    {
+      "id": 18,
+      "name": "Marina",
+      "location": {
+        "lat": 40.7000,
+        "lng": -74.0200
+      },
+      "routes": [5],
+      "amenities": ["Shelter", "Seating", "Real-time Display"],
+      "nearby": ["Boat Docks", "Seafood Restaurant", "Souvenir Shop"]
+    },
+    {
+      "id": 19,
+      "name": "Beach Resort",
+      "location": {
+        "lat": 40.6900,
+        "lng": -74.0300
+      },
+      "routes": [5],
+      "amenities": ["Shelter", "Seating", "Real-time Display", "Ticket Machine"],
+      "nearby": ["Beach", "Hotels", "Restaurants"]
+    },
+    {
+      "id": 20,
+      "name": "Coastal Village",
+      "location": {
+        "lat": 40.6800,
+        "lng": -74.0400
+      },
+      "routes": [5],
+      "amenities": ["Shelter", "Seating"],
+      "nearby": ["Beach Houses", "Seafood Market", "Souvenir Shops"]
+    }
+  ]
+}

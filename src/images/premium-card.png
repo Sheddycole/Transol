@@ -1,0 +1,10 @@
+<svg width="200" height="120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="120" rx="10" fill="#e9ecef"/>
+  <rect x="10" y="10" width="180" height="30" rx="5" fill="#ff9500"/>
+  <text x="100" y="30" font-family="Arial" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle">PREMIUM CARD</text>
+  <rect x="20" y="50" width="160" height="10" rx="2" fill="#6c757d"/>
+  <rect x="20" y="70" width="120" height="10" rx="2" fill="#6c757d"/>
+  <rect x="20" y="90" width="140" height="10" rx="2" fill="#6c757d"/>
+  <circle cx="170" cy="80" r="15" fill="#ff9500"/>
+  <text x="170" y="85" font-family="Arial" font-size="14" fill="white" text-anchor="middle" dominant-baseline="middle">P</text>
+</svg>
