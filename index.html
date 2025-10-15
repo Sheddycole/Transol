@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transol Transportation - Smart Mobility Solutions</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-image">
+                    <i class="fas fa-bus"></i>
+                </div>
+                <h1>Transol</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="routes.html">Routes & Schedules</a></li>
+                    <li><a href="cards.html" >Transport Cards</a></li>
+                    <li><a href="stops.html">Bus Stops</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Modern Mobility Solutions for Modern Cities</h2>
+                <p>Access real-time schedules, purchase transport cards, and find the nearest bus stops - all in one place.</p>
+                <div class="hero-buttons">
+                    <a href="#routes" class="btn btn-primary">View Bus Routes</a>
+                    <a href="#cards" class="btn btn-secondary">Get Transport Card</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Real-time Schedules</h3>
+                    <p>Access up-to-date bus schedules and routes to plan your journey efficiently.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Transport Cards</h3>
+                    <p>Purchase and recharge your transport cards online with ease.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Bus Stop Locator</h3>
+                    <p>Find all registered bus stops and your nearest pick-up points.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="routes" class="routes">
+        <div class="container">
+            <h2 class="section-title">Bus Routes & Schedules</h2>
+            <div class="route-finder">
+                <div class="route-search">
+                    <input type="text" id="route-search" placeholder="Search for a route...">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+                <div class="route-map">
+                    <script
+                    src="https://maps.googleapis.com/maps/api/js?key=INSERT_YOUR_API_KEY&callback=initMap&v=weekly&solution_channel=GMP_CCS_customcontrols_v2"
+                        defer>
+                </script>
+                    <div id="map-placeholder">
+                        <p>Interactive route map loading...</p>
+                        <div class="map-loading"></div>
+                    </div>
+                </div>
+                <div class="route-list">
+                    <h3>Popular Routes</h3>
+                    <ul>
+                        <li>
+                            <div class="route-number">1</div>
+                            <div class="route-details">
+                                <h4>Downtown - Airport Express</h4>
+                                <p>Frequency: Every 15 minutes</p>
+                            </div>
+                            <a href="#" class="btn btn-small">View</a>
+                        </li>
+                        <li>
+                            <div class="route-number">2</div>
+                            <div class="route-details">
+                                <h4>Central Station - Shopping Mall</h4>
+                                <p>Frequency: Every 20 minutes</p>
+                            </div>
+                            <a href="#" class="btn btn-small">View</a>
+                        </li>
+                        <li>
+                            <div class="route-number">3</div>
+                            <div class="route-details">
+                                <h4>University - Business District</h4>
+                                <p>Frequency: Every 10 minutes</p>
+                            </div>
+                            <a href="#" class="btn btn-small">View</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cards" class="cards">
+        <div class="container">
+            <h2 class="section-title">Transport Cards</h2>
+            <div class="cards-grid">
+                <div class="card-option">
+                    <div class="card-image">
+                        <img src="images/standard-card.png" alt="Standard Transport Card">
+                    </div>
+                    <h3>Standard Card</h3>
+                    <p>Perfect for regular commuters with unlimited rides within the city.</p>
+                    <p class="price">$50.00 / month</p>
+                    <a href="images/premium-card.png" class="btn btn-primary">Purchase</a>
+                </div>
+                <div class="card-option featured">
+                    <div class="card-badge">Most Popular</div>
+                    <div class="card-image">
+                        <img src="#" alt="Premium Transport Card">
+                    </div>
+                    <h3>Premium Card</h3>
+                    <p>Includes express routes, priority boarding, and regional travel.</p>
+                    <p class="price">$75.00 / month</p>
+                    <a href="images/premium-card.png" class="btn btn-primary">Purchase</a>
+                </div>
+                <div class="card-option">
+                    <div class="card-image">
+                        <img src="images/student-card.jpg" alt="Student Transport Card">
+                    </div>
+                    <h3>Student Card</h3>
+                    <p>Discounted rates for students with valid ID. Includes all city routes.</p>
+                    <p class="price">$30.00 / month</p>
+                    <a href="images/student-card.jpg" class="btn btn-primary">Purchase</a>
+                </div>
+            </div>
+            <div class="recharge-section">
+                <h3>Recharge Your Card</h3>
+                <div class="recharge-form">
+                    <input type="text" placeholder="Enter Card Number">
+                    <select>
+                        <option value="">Select Amount</option>
+                        <option value="10">$10.00</option>
+                        <option value="20">$20.00</option>
+                        <option value="50">$50.00</option>
+                        <option value="100">$100.00</option>
+                    </select>
+                    <button class="btn btn-primary">Recharge Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stops" class="stops">
+        <div class="container">
+            <h2 class="section-title">Bus Stops</h2>
+            <div class="stops-finder">
+                <div class="stops-search">
+                    <input type="text" id="stop-search" placeholder="Find a bus stop near you...">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+                <div class="stops-map">
+                    <!-- Interactive map will be inserted here using JavaScript -->
+                    <div id="stops-map-placeholder">
+                        <p>Bus stops map loading...</p>
+                        <div class="map-loading"></div>
+                    </div>
+                </div>
+                <div class="stops-list">
+                    <h3>Nearby Stops</h3>
+                    <ul>
+                        <li>
+                            <div class="stop-icon"><i class="fas fa-bus"></i></div>
+                            <div class="stop-details">
+                                <h4>Central Station</h4>
+                                <p>Routes: 1, 2, 5, 8</p>
+                                <p>0.5 miles away</p>
+                            </div>
+                            <a href="#" class="btn btn-small">Directions</a>
+                        </li>
+                        <li>
+                            <div class="stop-icon"><i class="fas fa-bus"></i></div>
+                            <div class="stop-details">
+                                <h4>Market Street</h4>
+                                <p>Routes: 3, 7, 9</p>
+                                <p>0.8 miles away</p>
+                            </div>
+                            <a href="#" class="btn btn-small">Directions</a>
+                        </li>
+                        <li>
+                            <div class="stop-icon"><i class="fas fa-bus"></i></div>
+                            <div class="stop-details">
+                                <h4>City Hall</h4>
+                                <p>Routes: 2, 4, 6</p>
+                                <p>1.2 miles away</p>
+                            </div>
+                            <a href="#" class="btn btn-small">Directions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Transol</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about-transol.jpg" alt="Transol Transportation">
+                </div>
+                <div class="about-text">
+                    <p>Transol is dedicated to providing smart mobility solutions for modern cities and communities. Our mission is to make public transportation reliable, accessible, and convenient for everyone.</p>
+                    <p>With our innovative digital platform, we're transforming the way people interact with public transport, making it easier to plan journeys, purchase tickets, and stay informed about schedules and routes.</p>
+                    <p>Our commitment to sustainability and technological advancement drives us to continuously improve our services and contribute to creating more livable, connected cities.</p>
+                    <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Transport Avenue, City Center</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@transol.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Transol</h3>
+                    <p>Smart mobility solutions for modern cities and communities.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#routes">Routes & Schedules</a></li>
+                        <li><a href="#cards">Transport Cards</a></li>
+                        <li><a href="#stops">Bus Stops</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Route Planning</a></li>
+                        <li><a href="#">Card Management</a></li>
+                        <li><a href="#">Bus Stop Locator</a></li>
+                        <li><a href="#">Schedule Updates</a></li>
+                        <li><a href="#">Mobile App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for updates and promotions.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit" class="btn btn-small">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Transol Transportation. All rights reserved.</p>
+                <p>Cole . O. Ukeje</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/data-loader.js"></script>
+</body>
+</html>
